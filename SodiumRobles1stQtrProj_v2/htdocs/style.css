@@ -1,0 +1,47 @@
+
+#employees{
+	float: left;
+}
+#satisfaction{
+	float: left;
+}
+#customers{
+	float: left;
+}
+h3 {
+	font-family:Helevetica, sans-serif;
+}
+   
+.Employees p{
+	color:#999;
+}
+.Satisfaction p{
+	color:#999;
+}
+.Customers p{
+	color:#999;
+}
+
+.info{
+    display: flex;
+    justify-contents: center;
+    flex-wrap: wrap;
+}
+.section{
+    display: flex;
+    justify-contents: center;
+    flex-wrap: wrap;
+}
+#Company{
+	color:#999;
+}
+.head{
+	font-size: 20px;
+	font-family: Verdana, sans-serif;
+}
+li{
+	font-family: Arial, sans-serif;
+}
+.Products{
+	font-family: Arial, sans-serif;
+}
