@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+*{
+	box-sizing:border-box;
+	background-color: #e6e6e6;
+	
+	}
+	
+li, a{
+	font-family: "inter", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color:gray;
+	
+	}
+	
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+	padding: 30px 10%
+	}
+	
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+	
+}
+.nav_links{
+	list-style:none;
+	text-decoration: none;
+}
+.nav_links li, a{
+	display: inline-block;
+	padding: 0px 20px;
+	font-size: 20px;
+	text-decoration:none;
+	
+	
+
+	
+}
+.nav_links li, a:hover{
+	color: black;
+}
+.nav_links li, a{
+	transition:all 0.3s ease 
+}
+#employees{
+	float: left
+}
+#satisfaction{
+	float: left
+}
+#customers{
+	float: left
+}
+h3 {
+	font-family:Helevetica, sans-serif;
+}
+   
+.Employees p{
+	color:#999;
+}
+.Satisfaction p{
+	color:#999;
+}
+.Customers p{
+	color:#999;
+}
+
+.info{
+    display: flex;
+    justify-contents: center;
+    flex-wrap: wrap;
+}
+.section{
+    display: flex;
+    justify-contents: center;
+    flex-wrap: wrap;
+}
+#Company{
+	color:#999;
+	position: relative;
+	top: 20px;
+	left:450px;
+	font-size: 20px;
+	
+}
+.head{
+	font-size: 20px;
+	font-family: Verdana, sans-serif;
+}
+li{
+	font-family: Arial, sans-serif;
+}
+.Products{
+	font-family: Arial, sans-serif;
+}
+#nig{
+	font-size: 40px;
+	position: relative;
+	left:200px
+}
+#bigboy{
+	position: relative;
+	left: 150px;
+	bottom: 450px;
+	
+	
+	
+	
+}
+#blow{
+	position:relative;
+	left: 200px
+	}
+
+}
+   
+}
+#niver{
+font-size: 16px;
+font-style
+}
+#mai{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+#kai{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+	
+#ram{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	left-margin:10px;
+	right-margin:10px;
+	background-color:#e6e6e6;
+}
+#mai{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+#rick{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	left-margin:10px;
+	right-margin:10px;
+	background-color:#e6e6e6;
+}
+#kai{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+#vidart{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	left-margin:10px;
+	right-margin:10px;
+	background-color:#e6e6e6;
+}
+#vid{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+#vid{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+#vidart{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+#Calcatta{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#e6e6e6;
+}
+#Marble2{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+#Carrara{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#e6e6e6;
+}
+#Marble1{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+#Markana{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#e6e6e6;
+}
+#Marble3{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+#Emperador{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: 10px;
+	background-color:#e6e6e6;
+	
+}
+#Marble4{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+#Levadia{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: 10px;
+	background-color:#e6e6e6;
+	
+}
+#Marble5{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+
+}
+#Honed{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#e6e6e6;
+	
+}
+#Marble6{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+#Honed{
+	position:relative;
+	border-style: solid;
+	border-color:black;
+	border-width:1px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: 10px;
+	background-color:#e6e6e6;
+	
+}
+#Marble6{
+	width:33.3%;
+	padding:10px;
+	float:left;
+}
+.box:hover{
+	transform: scale(1.3);
+	z-index:2;
+	
+}
+.box{
+	width:250px;
+	margin: 0 10px;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+	transition:1s;
+	
+	
+}
+.box img{
+	display: block;
+	width:100%;
+	border-radius: 5px;
+}
+.box:hover{
+	transform: scale(1.3);
+	z-index:2;
+}
+.container{
+	width:90%;
+	padding:20px;
+	margin:100px auto;
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+
+	
+}
+.core{
+	margin: 0 10px;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+	transition:1s;
+	
+	
+}
+.core img{
+	display: block;
+	border-radius: 5px;
+}
+.core:hover{
+	transform: scale(1.3);
+	z-index:2;
+}
+.cont{
+	width:90%;
+	padding:20px;
+	margin:100px auto;
+	
+}
+#facebook{
+ background: url('../images/sprite.png') no-repeat -34px -23px;
+ background-position: 0 0;
+ width: 100px;
+ height: 100px;
+ display: inline-block;
+ border: 2px solid #777;
+ border-radius: 100%;
+ transition: 0.3s;
+                }
+                #facebook:hover{
+                    background-position: 0 -110px;
+                    width: 100px;
+                    height: 100px;
+                }				
+#youtube{
+                    background: url('../images/sprite.png') no-repeat;
+                    background-position: -210px 0;
+                    width: 100px;
+                    height: 100px;
+                    display: inline-block;
+                    border: 2px solid #777;
+                    border-radius: 100%;
+                    transition: 0.3s;
+                }
+                #youtube:hover{
+                    background-position: -210px -110px;
+                    width: 100px;
+                    height: 100px;
+                }
+#twitter{
+                    background: url('../images/sprite.png') no-repeat;
+                    background-position: -105px 0;
+                    width: 100px;
+                    height: 100px;
+                    display: inline-block;
+                    border: 2px solid #777;
+                    border-radius: 100%;
+                    transition: 0.3s;
+                }
+                #twitter:hover{
+                    background-position: -105px -110px;
+                    width: 100px;
+                    height: 100px;
+				}
+.social-products{
+	float:left;
