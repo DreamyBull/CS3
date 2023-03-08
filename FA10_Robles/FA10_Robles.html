@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jimmy I love you + 5 please para uno sa cs lab kita mwah</title>
+</head>
+<body>
+<script>
+var x = Math.floor(Math.random()*1001);
+
+document.write("Randomly generated number: " + x +"<br>" );
+
+var onespart = x % 10;
+var tenspart = x % 100;
+var hunspart = x % 1000;
+var ones = onespart;
+var tens = tenspart - onespart;
+var huns = hunspart - tenspart;
+
+ document.write("Breakdown:" + huns + "," + tens + "," + ones );
+ 
+</script>
+</body>
+</html>
