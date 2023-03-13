@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jimmy ^2</title>
+
+<body onload ="determineTriangle(a,b,c)">
+
+<script>
+var a = prompt("Input Side 1 ","");
+var b = prompt("Input Side 2 ","");
+var c = prompt("Input Side 3 ","");
+
+function determineTriangle(a,b,c){	
+
+if(a==b && b==c){
+alert("The triangle is EQUILATERAL.");
+}
+else if((a == b && b != c )||(a==c && c !=b) || (b==c && c != a)) {
+alert("The triangle is ISOSCELES.");
+}
+else{
+alert("The triangle is SCALENE.");
+ }
+ }
+</script>	
+</body>
+</head>
+</html>
