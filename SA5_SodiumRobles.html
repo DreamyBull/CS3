@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="Online Shop" content="Item Calculator">
+    <title>My Online Shop</title>
+    <!-- type in the necessary meta tags -->
+    <style>
+        span {color: blue; text-decoration:underline}
+        button {width: 100px; padding: 5px; background: pink;}
+    </style>
+</head>
+<body>
+    <h1>Robles Rubble Online Shop</h1>
+    <h2>Product List: (Please Pick One)</h2>
+    <!--- provide your own 3 items and their prices in the list --->
+    <ol>
+        <li>Calacatta Marble: 50000</li>
+        <li>Emperador Marble: 30000</li>
+        <li>Carrara Marble:   10000</li>
+    </ol>
+    <!-- the following will be used to display purchase information -->
+    <p>Item selected: <span id="item"></span></p>
+    <p>Qty bought: <span id="qty"></span></p>
+    <p>Amount to pay for the item: <span id="bill"></span></p>
+    <p>Current Total Bill: <span id="tbill">0</span></p>
+    <button onclick="buyItem()">Buy an Item</button>
+    <button onclick="clearAll()">Clear</button>
+
+    <script>
+        const item1 = {name: "Calacatta Marble", price: 50000 };
+        const item2 = {name: "Emperador Marble", price: 30000};
+        const item3 = {name: "Carrara Marble", price: 10000};
+    
+        function buyItem() {
+            let ItemNum = prompt("Please Enter Item Number:");
+            let qty = prompt("Please Enter Item Quantity:");
+			
+			
+            if (qty && !isNaN(qty)) {
+                qty = parseInt(qty);
+                let item;
+                switch (ItemNum) {
+                    case "1": //if user inputs one the item selected will be item 1
+                        item = item1;
+                        break;
+                    case "2"://if user inputs two the item selected will be item 2
+                        item = item2;
+                        break;
+                    case "3"://if user inputs three the item selected will be item 3
+                        item = item3;
+                        break;
+                    default:// if the input isnt 1, 2, or 3 Item Number is Invalid will be displayed
+                        alert("Item Number is Invalid");
+                        return;
+                }
+                let bill = item.price * qty; // this line calculates the bill
+                document.getElementById("item").innerHTML = item.name;// displays the item name
+                document.getElementById("qty").innerHTML = qty;// displays the quantities of items bought
+                document.getElementById("bill").innerHTML = bill.toFixed(2); //displays amount to pay for a certain item
+                let currentBill = parseFloat(document.getElementById("tbill").innerHTML);
+                currentBill += bill;
+                document.getElementById("tbill").innerHTML = currentBill.toFixed(2); //this prints the calculated bill into the html
+				
+            } else {//if quantity is not a number it will display quantity is invalid
+			
+                alert("Quantity is invalid");
+				
+            }
+        }
+    
+        function clearAll() { //this function is used to clear or reset the items 
+            document.getElementById("item").innerHTML = "";
+            document.getElementById("qty").innerHTML = "";
+            document.getElementById("bill").innerHTML = "";
+            document.getElementById("tbill").innerHTML = "0";
+        }
+    </script>
+    
+</body>
+
+</html>

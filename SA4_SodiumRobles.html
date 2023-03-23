@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Car Deprecation Calculator</title>
+		<meta charset="UTF-8">
+        <meta name="CMV" content="Car Calculator">
+        <style>
+        	body {background: lightblue; 
+            	font-family: arial;
+                color: navy;
+            }
+            button {padding: 10px; background:violet }
+            span {color: maroon}
+        </style>
+
+	</head>
+<body>
+	<h1> Car Depreciation Calculator </h1>
+	<h2> Your Car Model: <span id="model"> </span></h2>
+    <h2> Car Cost: <span id="cost"> </span></h2>
+    <h2> Age of your Car: <span id="age"> </span></h2>
+    <h2> Good Condition?: <span id="condition"> </span></h2>
+    <h2> Your Car's Current Market Value <span id="currentvalue"> </span></h2>
+    <button onclick="enterCar()"> Enter your Car information </button>
+    <script>
+    	/* do not forget to place comments on the script */
+    	function enterCar() {
+        	carmodel = prompt("Enter Car Model");
+            carcost = prompt("Enter Cost of the Car");
+            carage = prompt("How old is your car?");
+            good = confirm("In Good Condition? Ok for Yes / Cancel for No");
+            model.innerHTML = carmodel;
+            cost.innerHTML = carcost;
+            age.innerHTML = carage;
+            condition.innerHTML = (good) ? "Yes" : "No";   
+			computeMarketValue(parseFloat(carcost),parseFloat(carage),good);
+			}
+		function computeMarketValue(cost, age, condition){
+            var CMV = 0; 
+			if(carage > 10){ // this line checks if the car age is greater than 10 then the value of the cmv will automatically 70000 
+			CMV = 70000;
+			}
+			else if(carage >= 8 && carage < 10){// this line checks if the car age is greater than or equal 8 but less than 10 then the value of the cmv will automatically 70000
+			CMV = 100000;
+			}
+			else if(carage >=5  && carage < 8){// this line checks if the car age is greater than or equal to 5 but less than 8 then the value of the cmv will be 75% less
+			CMV = carcost * 0.25;
+			}
+			else if(carage < 5){// this line checks if the car age is less than 5 then the value of the cmv will be 50% less
+			CMV =  carcost * 0.5;
+			}
+			
+			if(!condition){// this line checks if the condition of the car is bad or good, if its good then the car value will remain but if it's bad then the value will be 10% less
+			CMV = CMV * 0.9;
+			}
+			currentvalue.innerHTML = CMV; /* This displays the code on the current value id*/
+			}
+			
+        
+    </script>
+    
+</body>
+</html>

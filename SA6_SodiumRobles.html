@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>One Time Password</title>
+		<meta charset="UTF-8">
+        <meta name="OTP" content="OTP Generator">
+		<style>
+        	body {background: lightblue; 
+            	text-align: center;
+            	font-family: arial;
+                color: navy;
+            }
+            button {padding: 10px; background:violet }
+            a {font-size: 0.5em; color: maroon}
+        </style>
+	</head>
+	<body onload = "displayOTP()">
+		<h1> Final Verification Step </h1>
+		<h2> Current OTP: <span id="otp"> _ _ _ _ _ _ </span> <a href="" onclick = "GenerateOTP()"> New 
+	OTP </a></h2>
+		<button onclick = "checkOTP()"> Enter the OTP as shown above </button>
+		<script>
+			
+			function GenerateOTP(){// generates a random otp from numbers 0-9
+				let digits = "0123456789";
+				let newotp = "";
+				for (let i = 0; i < 6; i++){
+					newotp += digits[Math.floor(Math.random() * 10)];
+				}
+				document.getElementById("otp").innerHTML = newotp;
+			}
+			
+			function displayOTP(){
+				GenerateOTP();
+			}
+			
+			function checkOTP(){//this is where user enters the otp and will be checked if otp entered is correct
+				let enteredOTP = prompt("Please enter the OTP");//prompts user to enter the otp they generated
+				let newOTP = document.getElementById("otp").innerHTML;
+				if (enteredOTP === newOTP ){// if the otp entered is the same as new otp the code will execute window.open and open twitter.com
+					window.open("twitter.com");
+				} 
+				else{//if the otp that was entered is wrong it executes an alert that says that the OTP was incorrect
+					alert("OTP is incorrect try again.");
+					GenerateOTP();
+				}
+			}
+		</script>
+	</body>
+</html>
