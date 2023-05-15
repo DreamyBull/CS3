@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robles_LearningWebsheet</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    .input-form {
+      margin-bottom: 10px;
+    }
+    .error {
+      border: 2px solid red;
+    }
+    .success {
+      border: 2px solid green;
+    }
+
+    #output {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <form id="signup-form">
+    <fieldset>
+      <legend id= "SignUp" >Sign-Up</legend>
+       <div class = "all">
+      <div class="input-form"> 
+        <label for="name" id=" inputt"> Name:</label>
+        <input type="text" id="name" onblur="validateInput(this)" onfocus="clearvalidation(this)" required>
+      </div>
+      <div class="input-form">
+        <label for="username" id=" inputt">Username:</label>
+        <input type="text" id="username" onblur="validateInput(this)" onfocus="clearvalidation(this)" required>
+      </div>
+      <div class="input-form">
+        <label for="gender" id=" inputt">Gender:</label>
+        <select id="gender" onblur="validateInput(this)" onfocus="clearvalidation(this)" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="prefer-not-to-mention">Prefer Not to Mention</option>
+        </select>
+      </div>
+      <div class="input-form">
+        <label for="password" id=" inputt">Password:</label>
+        <input type="password" id="password" onblur="validateInput(this)" onfocus="clearvalidation(this)" required>
+      </div>
+      <div class="input-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" onblur="validateInput(this)" onfocus="clearvalidation(this)" required>
+      </div>
+      <div class="input-form">
+        <label for="address" id=" inputt">Address:</label>
+        <input type="text" id="address" onblur="validateInput(this)" onfocus="clearvalidation(this)" required>
+      </div>
+      <div class="input-form">
+        <label for="interest" id=" inputt">Interest:</label>
+        <textarea id="interest" rows="4" onblur="validateInput(this)" onfocus="cleavalidation(this)" required></textarea>
+      </div>
+      <div class="input-form">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset" onclick="clearForm()">
+      </div>
+	  </div> 
+    </fieldset>
+  </form>
+
+  <div id="output"></div>
+	</center>
+  <script>
+    function validateInput(element) {
+      if (element.value === '') {
+        element.classList.add('error');
+      } else {
+        element.classList.remove('error');
+        element.classList.add('success');
+      }
+    }
+
+    function clearvalidation(element) {
+      element.classList.remove('error');
+      element.classList.remove('success');
+    }
+
+    function clearForm() {
+      document.getElementById('signup-form').reset();
+      document.getElementById('output').innerHTML = '';
+    }
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var name = document.getElementById('name').value;
+      var username = document.getElementById('username').value;
+      var gender = document.getElementById('gender').value;
+      var password = document.getElementById('password').value;
+      var email = document.getElementById('email').value;
+      var address = document.getElementById('address').value;
+      var interest = document.getElementById('interest').value;
+	  var output = document.getElementById('output');
+      output.innerHTML = '<h2>Sign-Up Information:</h2>';
+      output.innerHTML += '<p><strong>Name:</strong> ' + name + '</p>';
+      output.innerHTML += '<p><strong>Username:</strong> ' + username + '</p>';
+      output.innerHTML += '<p><strong>Gender:</strong> ' + gender + '</p>';
+      output.innerHTML += '<p><strong>Password:</strong> ' + password + '</p>';
+      output.innerHTML += '<p><strong>Email:</strong> ' + email + '</p>';
+      output.innerHTML += '<p><strong>Address:</strong> ' + address + '</p>';
+      output.innerHTML += '<p><strong>Interest:</strong> ' + interest + '</p>';
+    });
+  </script>
+</body>
+</html>
