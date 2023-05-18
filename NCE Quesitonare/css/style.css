@@ -1,0 +1,79 @@
+#QST1{
+width: 160%;
+border: 1px solid white;
+border-radius: 20px;
+padding: 20px;
+background-color:#E5E4E4;
+color:#088F8F;
+text-align: left; 
+}
+#iden{
+width: 50%;
+border: 1px solid white;
+border-radius: 20px;
+padding: 20px;
+background-color:#E5E4E4;
+color:#088F8F;
+width: 160%;
+}	
+body{
+background-color: #FFFFFF;
+font-family: Gill Sans, sans-serif;
+float: left;
+margin-left: 30px;
+}
+QS1{
+background-color: #DAC7FF;
+width: 70%;
+padding: 20px;
+margin: 20px;
+position: static;
+} 
+#answer-result{
+	color: #FFFFFF;
+}
+input[type=radio] {
+	width:50px;
+	margin:10px;
+	box-sizing:border-box;
+}
+input[type=radio]:focus {
+  border: 3px solid #555;
+
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #E5E4E4;
+  border: none;
+  color: #088F8F;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=button]:hover {
+  border: 1px solid #000000;
+
+}
+#answer-result{
+color: #088F8F
+}
+input[type=submit]:hover{
+	border:1px solid #000000
+}
+#top{
+  display: flex;
+  justify-content: space-between;
+  width: 160%;
+border: 1px solid white;
+border-radius: 20px;
+padding: 20px;
+background-color:#E5E4E4;
+color:#088F8F;
+text-align: left; 
+}
+#fr{
+	margin-left:50px;
+}
+#total{
+	margin-right:50px;
+}
