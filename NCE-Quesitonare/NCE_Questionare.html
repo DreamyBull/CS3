@@ -254,15 +254,7 @@
         </form>
         <script type="text/javascript">
             function resetAnswers() {
-                var radioButtons = document.querySelectorAll('input[type="radio"]');
-                radioButtons.forEach(function (radioButton) {
-                    radioButton.checked = false;
-                });
-
-                var textInputs = document.querySelectorAll('input[type="text"]');
-                textInputs.forEach(function (textInput) {
-                    textInput.value = "";
-                });
+                location.reload();
             }
             function result() {
                 var score = 0;
